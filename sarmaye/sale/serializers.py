@@ -18,3 +18,9 @@ class CalculationResponseSerializer(serializers.Serializer):
     asset = serializers.CharField()
     profit = serializers.FloatField()
     percentage = serializers.FloatField()
+
+
+class MaxProfitResponseSerializer(serializers.Serializer):
+    first_month = serializers.CharField()
+    last_month = serializers.CharField()
+    percentage = serializers.FloatField()
